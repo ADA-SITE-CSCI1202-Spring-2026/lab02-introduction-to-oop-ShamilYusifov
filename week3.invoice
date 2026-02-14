@@ -1,0 +1,27 @@
+private invoiceOfItem(){
+    String number;
+    String description;
+    int quantifier;
+    double piece;
+}
+
+
+private setInvoice(String number, String description, int quantifier, double piece){
+    this.number = number;
+    this.description = description;
+    if (quantifier <0) {this.quantifier = 0;}
+    else this.quantifier = quantifier;
+    if (piece <0){this.piece = 0.0;}
+    else this.piece = piece;
+}
+
+private getInvoice(){
+    return this.number;
+    return this.description;
+    return this.quantifier;
+    return this.piece;
+}
+
+private double getInvoiceAmount(int price){
+    return quantifier*price;
+}
